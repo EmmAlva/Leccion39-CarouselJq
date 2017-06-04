@@ -7,29 +7,42 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Carousel - JQuery</h1>
-		<hr>
-		<div class="carousel-wrapper">
-			<ul class="carousel-list">
-				<li>
-					<div class="items">1</div>
-				</li>
-				<li>
-					<div class="items">2</div>
-				</li>
-				<li>
-					<div class="items">3</div>
-				</li>
-				<li>
-					<div class="items">4</div>
-				</li>
-				<li>
-					<div class="items">5</div>
-				</li>
-			</ul>
-		</div>
-	</div>
+	<h1 class="carousel-title">Carousel - JQuery</h1>
+	<hr>
+	<section class="container">
+		<ul id="carousel" class="carousel-wrapper">
+			<li class="img-current" id="img0" class="items visible">
+				<img src="assets/img/how-tall-is-a-tree.jpg" alt="alturas">
+			</li>		
+			<li id="img1" class="items ">
+				<img src="assets/img/hyperion-sequoia.jpg" alt="sequoia">
+			</li>
+		
+			<li id="img2" class="items ">
+				<img src="assets/img/baobab.jpg" alt="baobab">
+			</li>
+		
+			<li id="img3" class="items ">
+				<img src="assets/img/bodhi-tree.jpg" alt="arbolbodhi">
+			</li>
+	
+			<li id="img4" class="items ">
+				<img src="assets/img/mystical-angel-oak-tree.jpg" alt="roble">
+			</li>
+			<li id="img5" class="items ">
+				<img src="assets/img/magnolia-grandiflora.jpg" alt="magnolia">
+			</li>
+		</ul>
+		<!-- <span>
+			<button id="btn-before">Anterior</button>
+			<button id="btn-next">Siguiente</button>
+		</span>
+ -->
+		<!-- CONTROLES -->
+		<ul id="carousel-controls" class="carousel-controls">
+			
+		</ul>
+	</section>
 
 
 	<script type="text/javascript" src="assets/js/vendor/jquery-3.2.1.min.js"></script>
