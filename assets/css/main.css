@@ -11,6 +11,7 @@ body{
 ul{
 	list-style-type: none;
 }
+
 .carousel-title{
 	text-align: center;
 	margin:50px 0 40px;
@@ -21,8 +22,7 @@ ul{
 /*Contenedor*/
 .container{
 	margin: 0 auto;
-	width: 600px;
-	overflow: auto;
+	width: 800px;
 }
 .carousel-wrapper{
 	position: relative;
@@ -30,16 +30,19 @@ ul{
 	width: 100%;
 	border: 5px solid #415066;
 	overflow: hidden;
-	float: left;
 }
-
-.carousel-wrapper img{
+.carousel-wrapper li {
 	display: none;
-	width: 100%;
-	height: 100%;
 }
-.carousel-wrapper img.active{
-	display: inline-block;
+li.img-current{
+	display: block;
+}
+.carousel-wrapper li img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	height: auto;
 }
 /*Controles*/
 .carousel-controls{
@@ -62,13 +65,13 @@ ul{
 }
 
 /*PRE-NEXT*/
-.carousel-all{
-	position: relative;
-}
+
 .prev, .next{
 	float: left;
 	margin-top:  150px;
 	cursor: pointer;
+	font-size: 1.7rem;
+	font-weight: bold;
 }
 .prev{
 	position: relative;
