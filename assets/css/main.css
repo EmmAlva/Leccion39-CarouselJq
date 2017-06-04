@@ -6,12 +6,11 @@
 	box-sizing: border-box;
 }
 body{
-	background-color: #C9F0CE;
+	background-color: ;
 }
 ul{
 	list-style-type: none;
 }
-
 .carousel-title{
 	text-align: center;
 	margin:50px 0 40px;
@@ -22,7 +21,8 @@ ul{
 /*Contenedor*/
 .container{
 	margin: 0 auto;
-	width: 800px;
+	width: 600px;
+	overflow: auto;
 }
 .carousel-wrapper{
 	position: relative;
@@ -30,19 +30,16 @@ ul{
 	width: 100%;
 	border: 5px solid #415066;
 	overflow: hidden;
+	float: left;
 }
-.carousel-wrapper li {
+
+.carousel-wrapper img{
 	display: none;
+	width: 100%;
+	height: 100%;
 }
-li.img-current{
-	display: block;
-}
-.carousel-wrapper li img{
-	position: absolute;
-	top: 0;
-	left: 0;
-	max-width: 100%;
-	height: auto;
+.carousel-wrapper img.active{
+	display: inline-block;
 }
 /*Controles*/
 .carousel-controls{
@@ -63,6 +60,30 @@ li.img-current{
 .carousel-controls li.active{
 	background-color: #1DBC3B;
 }
+
+/*PRE-NEXT*/
+.carousel-all{
+	position: relative;
+}
+.prev, .next{
+	float: left;
+	margin-top:  150px;
+	cursor: pointer;
+}
+.prev{
+	position: relative;
+	margin-right: -1px;
+	z-index: 100;
+}
+.next{
+	position: absolute;
+	top: 70%;
+	right: 0;
+	
+	z-index: 100;
+
+}
+
 
 /*RESPONSIVE*/
 @media only screen and (max-width: 825px){
